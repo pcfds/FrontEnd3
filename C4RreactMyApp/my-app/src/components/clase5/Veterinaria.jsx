@@ -4,6 +4,7 @@ const Veterinaria = (props) => {
     return (
         <React.Fragment>
             <h1 className="bg-primary text-center text-white">Mi veterinaria</h1>
+            
             {props.perritos.map((perrito, i) => {
                 return (<React.Fragment key={perrito.id}>
                     <h2>{perrito.nombre}</h2>
@@ -15,6 +16,7 @@ const Veterinaria = (props) => {
                     </ul>
                 </React.Fragment>)
             })}
+            {props.children}
 
         </React.Fragment>
     )
