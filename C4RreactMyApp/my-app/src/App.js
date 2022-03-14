@@ -1,4 +1,3 @@
-import logo from './logo.svg';
 import './App.css';
 import Hola from './components/Hola'
 import Footer from './components/Footer'
@@ -23,14 +22,14 @@ function App() {
       <ul>
         {lista.map((t,i)=>{
           console.log(t)
-        return <li className='color' key={i.toString()}>{t}</li>
+        return <li className='color2' key={i.toString()}>{t}</li>
       }
         )}
       </ul>
       </div>
-      <Hola color="red" key="1" nombre="Felicitas" apellido="Herrera"/>
-      <Hola color="beige" nombre="Juan"/>
-      <Hola color="yellow" nombre="Pedro"/>
+      <Hola color="red"  key="1" nombre="Felicitas" apellido="Herrera"/>
+      <Hola color="beige"  nombre="Juan"/>
+      <Hola color="yellow"  nombre="Pedro"/>
       <Footer color="green"/>
       
     </div>
