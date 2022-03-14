@@ -1,28 +1,18 @@
-import logo from './logo.svg';
 import './App.css';
-import './componentes/ListaAnimales'
-
+// import Hola from './componentes/Hola';
+// import Footer from './componentes/Footer';
+import Veterinaria from "./componentes/clase6/Veterinaria";
+import Perritos from './componentes/clase6/Perritos';
 function App() {
-  return (
-
-    <ListaAnimales/> )
-  //   // <div className="App">
-  //   //   <header className="App-header">
-  //   //     <img src={logo} className="App-logo" alt="logo" />
-  //   //     <p>
-  //   //       Mi primer App <code>src/App.js</code> and save to reload.
-  //   //     </p>
-  //   //     <a
-  //   //       className="App-link"
-  //   //       href="https://reactjs.org"
-  //   //       target="_blank"
-  //   //       rel="noopener noreferrer"
-  //   //     >
-  //   //       Learn React
-  //   //     </a>
-  //   //   </header>
-  //   // </div>
-  // );
+    return (
+    <div className="App">
+      {/* <Hola color="red" nombre="Felicita " apellido="Reyes"/>
+      <Hola color="green" nombre="Juan" apellido="Cruz"/>
+      <Hola color="yellow" nombre="Pepi" apellido="Dias"/>
+      <Footer/> */}
+      <Veterinaria perritos={Perritos}/>
+    </div>
+  );
 }
 
 export default App;

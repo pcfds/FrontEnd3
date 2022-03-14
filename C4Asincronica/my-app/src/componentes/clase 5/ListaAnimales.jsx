@@ -38,7 +38,7 @@ const animales = [
 class ListaAnimales extends React.Component {
   render() {
     return (document.getElementById("root").innerHTML = (
-      <div>
+      <React.Fragment>
         {animales.map((animal) => (
           <li key={animal.id}>
             <h1>
@@ -59,7 +59,7 @@ class ListaAnimales extends React.Component {
             </p>
           </li>
         ))}
-      </div>
+      </React.Fragment>
     ));
   }
 }
